@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form-message.invalid{
+  color: tomato;
+  font-size: 12px;
+}
+.form-message.valid{
+  color: green;
+  font-size: 12px;
+}
+
+.list-group-horizontal {
+  display: grid !important;
+  grid-template-columns: repeat(4, calc(100%/4));
+  justify-items: stretch;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin: .5rem;
+  box-shadow: 0px 3px 7px rgba(0,0,0, 0.2);
+  background: #f5f5f5;
+  border: 1px solid rgba(253, 253, 253, 0.17);
+}
+.list-group-horizontal .list-group-item+.list-group-item{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 3px !important;
+  border-left-width: 1px !important;
+  border-top-width: 1px !important;
+}
+.delete-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.form-control.has-error{
+  border-color: #dc3545;
+  padding-right: calc(1.5em + .75rem);
+}
